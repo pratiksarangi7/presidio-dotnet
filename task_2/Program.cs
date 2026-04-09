@@ -11,7 +11,7 @@ public class Person
         this.name = name;
         this.age = age;
     }
-    public void Greeting()
+    public void Introduce()
     {
         Console.WriteLine($"Hello! I am {name}. I am {age} years old");
     }
@@ -21,10 +21,10 @@ public class Person
         Person p2 = new("Sagnik", 30);
         Person p3 = new("Bhavya", 40);
         Person p4 = new("Mayur", 102);
-        p1.Greeting();
-        p2.Greeting();
-        p3.Greeting();
-        p4.Greeting();
+        p1.Introduce();
+        p2.Introduce();
+        p3.Introduce();
+        p4.Introduce();
     }
 }
 

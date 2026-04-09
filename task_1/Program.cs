@@ -1,9 +1,17 @@
 ﻿Console.Write("Enter number: ");
-int n = int.Parse(Console.ReadLine());
-int res = 1;
-for (int i = 1; i <= n; i++)
+string input = Console.ReadLine()!;
+if (!int.TryParse(input, out int n) || n < 0)
 {
-    res *= i;
+    Console.WriteLine("Please enter a positive integer only");
 }
-Console.WriteLine("factorial is: " + res);
+else
+{
+    int res = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        res *= i;
+    }
+    Console.WriteLine("factorial is: " + res);
+
+}
 

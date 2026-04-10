@@ -1,0 +1,1 @@
+Number of words: 50, Number of lines: 10
